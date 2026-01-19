@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Select City</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h2>Step 1: Select Your City</h2>
+        <form action="/select_emergency">
+            <select name="city" required>
+                <option value="" disabled selected>Choose your city...</option>
+                <option value="Mumbai">Mumbai</option>
+                <option value="Delhi">Delhi</option>
+            </select>
+            <br><br>
+            <button type="submit" class="btn-next">Next →</button>
+        </form>
+    </div>
+</body>
+</html>
